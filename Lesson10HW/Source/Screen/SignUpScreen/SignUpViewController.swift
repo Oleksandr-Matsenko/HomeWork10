@@ -15,6 +15,16 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         subscrubeNotifications()
+        setUpUI()
+    }
+    private func  setUpUI() {
+        contentView.emailNameTextField.keyboardType = .emailAddress
+        contentView.passwordTextField.isSecureTextEntry = true
+        contentView.confirmPasswordTextField.isSecureTextEntry = true
+        contentView.cardNumberTextField.keyboardType = .numberPad
+        contentView.cvvTextField.keyboardType = .numberPad
+        contentView.cvvTextField.isSecureTextEntry = true
+        contentView.expDateTextField.keyboardType = .numberPad
     }
 }
 
