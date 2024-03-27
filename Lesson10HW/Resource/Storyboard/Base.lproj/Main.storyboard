@@ -261,6 +261,7 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="VQF-j1-jcd" id="eV6-7e-c7p"/>
+                        <outlet property="scrollView" destination="4Vl-SM-mm9" id="d4p-1G-n5E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
