@@ -44,6 +44,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         // Assign Delegate
         assignDelegate.forEach{
             $0?.delegate = self
+            $0?.returnKeyType = .done // Change returnKeyType to Done
         }
     }
 }
@@ -69,6 +70,11 @@ extension SignUpViewController {
             return upDateEx.count <= 4
         }
         return true
+    }
+    
+    // Hide keyBoard while "Done" button pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
     
     
